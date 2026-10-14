@@ -40,3 +40,11 @@ Resource: OWASP Top 10 for Large Language Models - https://owasp.org/www-project
 When storing chat logs, anonymization irreversibly strips and masks all identifiers so that the data can never be re-linked to an individual, whereas pseudonymization replaces identifying fields with artificial identifiers or pseudonyms while keeping the mapping key secure elsewhere. Anonymization completely takes the data outside the scope of modern data protection laws because the data is no longer considered personal data, whereas pseudonymized data remains legally regulated since re-identification is still technically possible with the key.
 
 Resource: GDPR Article 4(1) & (5) - Definitions - https://gdpr-info.eu/art-4-gdpr/
+
+## Misconception in My Track
+
+A common misconception in networking is believing that IPv6 adoption is simply IPv4 with larger addresses, and that IPv6 packet headers are fundamentally identical to IPv4 except for address field lengths. In reality, RFC 8200 fundamentally redesigned the IPv6 header to maintain a fixed 40-octet size with simplified fields, replacing variable IPv4 options with modular extension headers. This eliminates hop-by-hop header parsing overhead at intermediate routers. This structural optimization is explicitly detailed in Section 2 (IPv6 Header Format) of RFC 8200.
+
+## Open Question
+
+How can network infrastructure optimize latency and dynamic routing for real-time streaming responses from LLM endpoints across constrained mobile networks?
