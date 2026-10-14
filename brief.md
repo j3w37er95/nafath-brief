@@ -22,3 +22,21 @@ Resource: Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks - htt
 iOS App Transport Security (ATS) enforces strict secure connections by requiring all HTTP communications over the network to use HTTPS (TLS version 1.2 or later) with secure cipher suites. If the mobile app attempts to call a plain HTTP endpoint instead of a secure one, ATS blocks the connection entirely by default and throws a network error, preventing insecure data transmission over the public internet.
 
 Resource: Preventing Insecure Network Connections | Apple Developer Documentation - https://developer.apple.com/documentation/security/preventing_insecure_network_connections
+
+## Networking
+
+IPv6 differs fundamentally from IPv4 by expanding the address space from 32 bits to 128 bits, providing a virtually limitless pool of unique IP addresses. Additionally, IPv6 simplifies packet headers, removes the need for Network Address Translation (NAT) by enabling true end-to-end connectivity, and incorporates built-in support for autoconfiguration and IPsec. This scalability is critical as billions of new IoT and mobile devices connect to the internet.
+
+Resource: RFC 8200 - Internet Protocol, Version 6 (IPv6) Specification - https://www.rfc-editor.org/rfc/rfc8200
+
+## Cybersecurity
+
+Prompt injection occurs when an attacker manipulates the inputs to a large language model to bypass its guardrails and execute unintended instructions. Direct prompt injection happens when a user inputs malicious prompts directly into the chat interface, whereas indirect prompt injection occurs when the AI retrieves untrusted external data containing embedded hidden instructions. Two ways to reduce this risk include strict input/output sanitization and enforcing architectural separation between trusted system instructions and untrusted user data.
+
+Resource: OWASP Top 10 for Large Language Models - https://owasp.org/www-project-top-10-for-large-language-models/
+
+## Data
+
+When storing chat logs, anonymization irreversibly strips and masks all identifiers so that the data can never be re-linked to an individual, whereas pseudonymization replaces identifying fields with artificial identifiers or pseudonyms while keeping the mapping key secure elsewhere. Anonymization completely takes the data outside the scope of modern data protection laws because the data is no longer considered personal data, whereas pseudonymized data remains legally regulated since re-identification is still technically possible with the key.
+
+Resource: GDPR Article 4(1) & (5) - Definitions - https://gdpr-info.eu/art-4-gdpr/
